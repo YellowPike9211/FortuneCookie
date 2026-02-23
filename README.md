@@ -1,4 +1,7 @@
-<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/886fe0a3-2f44-4508-8dbd-bba52943b9a8" /># 🥠 Fortune Cookie Multiverse
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b894102d-a0ec-4285-8e1a-ae8ec8015d41" />
+
+
+# 🥠 Fortune Cookie Multiverse
 
 Fortune Cookie Multiverse is a desktop Python app where you choose a type of fortune cookie and crack it open to reveal a randomly generated message.
 
