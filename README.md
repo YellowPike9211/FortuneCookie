@@ -1,128 +1,83 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b894102d-a0ec-4285-8e1a-ae8ec8015d41" />
+🥠 Fortune Cookie Multiverse
+A playful browser game where you choose a cookie, crack it open, and receive a fortune from one of three chaotic universes.
+Built with Godot 4 and fully playable on desktop, laptop, tablet, and mobile.
 
+✨ Overview
+Fortune Cookie Multiverse is a lighthearted interactive experience where you pick a cookie type and reveal a randomly generated fortune. Each cookie has its own personality and tone:
+- 💛 Wholesome — gentle, uplifting, encouraging
+- 👻 Cursed — chaotic, mildly unhinged, slightly concerning
+- 😂 Funny — absurd, goofy, and ridiculous
+Tap a cookie. Crack it open. Accept your destiny.
 
-# 🥠 Fortune Cookie Multiverse
+🎮 Features
+- Fully browser‑playable (HTML5 export)
+- Mobile‑friendly responsive layout
+- Three themed cookie types with unique fortune generators
+- Custom cartoon‑style art for cookies, UI, and backgrounds
+- Smooth scene transitions and interactive UI
+- Endless fortunes — each one generated fresh
 
-Fortune Cookie Multiverse is a desktop Python app where you choose a type of fortune cookie and crack it open to reveal a randomly generated message.
-
-There are three universes of fortune:
-
-- 💛 Wholesome – Encouraging and uplifting
-- 👻 Cursed – Slightly unsettling and chaotic
-- 😂 Funny – Completely ridiculous
-
-Click a cookie. Crack it. Embrace your destiny.
-
----
-
-## 🎮 Features
-
-- Fullscreen interactive interface
-- Click-to-crack animated cookie system
-- Randomly generated fortunes (different every time)
-- Custom background and themed cookie art
-- Three unique fortune generators
-
----
-
-## 🛠 Built With
-
-- Python 3
-- Tkinter (built-in Python GUI library)
-- Random module
+🛠️ Built With
+- Godot Engine 4
+- GDScript
 - Custom PNG assets
+- HTML5 export for web play
 
----
+▶️ How to Play
+You can play the game directly on itch.io — no installation required.
+- Choose a cookie type
+- Watch it animate into place
+- Tap/click to crack it open
+- Read your fortune
+- Tap “Another Fortune” to return and choose again
+Works on:
+- Desktop browsers
+- Laptop browsers
+- Mobile browsers (portrait & landscape)
+- Fullscreen mode
 
-## 📥 How To Run
-
-⚠️ This is a desktop application. It does NOT run in a browser.
-
-1. Download or clone this repository:
-
-https://github.com/YellowPike9211/FortuneCookie
-
-2. Make sure you have Python 3 installed.
-
-Check with:
-
-
-python --version
-
-
-3. Run the program:
-
-
-python game.py
-
-
-The app will launch in fullscreen mode.
-
-Press `ESC` to exit fullscreen.
-
----
-
-## Screenshots
-
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/97d6b083-e2da-42f3-87de-3825fa2b08ed" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4c74735b-c086-4e65-9713-264847608744" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/43df5f93-9ea2-44b7-84e2-7c849b131940" />
-
-
-
-## 📂 Project Structure
-
-
+📂 Project Structure
 FortuneCookie/
 │
-├── game.py
-├── background.png
-├── paper.png
-├── cookie_wholesome.png
-├── cookie_wholesome_cracked.png
-├── cookie_cursed.png
-├── cookie_cursed_cracked.png
-├── cookie_funny.png
-├── cookie_funny_cracked.png
+├── project.godot
+├── MainMenu.tscn
+├── FortuneScene.tscn
+├── Global.gd
+├── Fortunes.gd
+├── assets/
+│     ├── cookie_wholesome.png
+│     ├── cookie_wholesome_cracked.png
+│     ├── cookie_cursed.png
+│     ├── cookie_cursed_cracked.png
+│     ├── cookie_funny.png
+│     ├── cookie_funny_cracked.png
+│     ├── paper.png
+│     ├── background.png
+│     └── ui elements...
+└── icon.svg
 
 
-All image files must stay in the same folder as `game.py`.
+Everything needed to run or modify the game is included.
 
----
+🧠 How It Works
+Each cookie type has its own fortune generator inside Fortunes.gd.
+Each generator:
+- Stores themed sentence fragments
+- Randomly assembles them into a unique fortune
+- Returns a fresh message every time
+When a cookie is selected:
+- The main menu transitions away
+- The chosen cookie animates into the center
+- Cracking reveals the fortune and paper
+- A button returns you to the multiverse menu
 
-## 🧠 How It Works
+🚀 Future Improvements
+- Cookie cracking animation
+- Sound effects
+- More cookie types
+- More fortune variations
+- Achievements or “fortune history”
 
-Each fortune category has its own generator function:
-
-- `generate_wholesome()`
-- `generate_cursed()`
-- `generate_funny()`
-
-Each function:
-- Stores sentence fragments in lists
-- Uses `random.choice()` to combine them
-- Returns a unique fortune string
-
-When the cookie is clicked:
-1. The image switches to a cracked version
-2. A random fortune is generated
-3. The message appears on paper
-
----
-
-## 💡 Why I Built This
-
-I wanted to create a fun interactive desktop experience that feels playful but polished. Instead of simple text output, I built a full GUI with visual feedback, fullscreen mode, and themed assets.
-
----
-
-## 🚀 Future Improvements
-
-- Add sound effects
-- Add more fortune categories
-- Add animations
-- Package as an executable
-
----
-
-Made for Hack Club Flavortown 🍪🔥
+📜 License
+This project is open source under the MIT License.
+You are free to learn from, modify, and build upon this project.
